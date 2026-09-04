@@ -86,3 +86,13 @@ npm run dev
 ```
 
 4. Abre [http://localhost:3000](http://localhost:3000), pide el magic link y recógelo en [http://localhost:8025](http://localhost:8025).
+
+<!-- BEGIN cc:que-se-valora -->
+¡Hola! Aquí te explico un poco en qué nos fijamos cuando corregimos tu proyecto de Mailing. Así sabes qué aspectos son los más importantes y dónde poner tu energía.
+
+## 📋 Qué se valora
+
+Cuando revisemos tu proyecto, lo que más pesa es que **todo funcione como se pide en el enunciado**, es decir, que tu aplicación haga exactamente lo que se espera de ella. También es un peso importante la **calidad de tu código y cómo lo has estructurado**, buscando que sea limpio, fácil de entender y bien organizado. El vídeo demo también tiene un peso importante, ya que nos permite ver tu proyecto en acción y cómo lo has pensado. Finalmente, aunque con un peso menor, valoramos la **documentación que aportes y las decisiones que hayas tomado**, para entender tu proceso y justificaciones.
+
+Recuerda que el detalle del enunciado es lo que manda, y la evaluación no penalizará por cosas que no se pidan explícitamente en él.
+<!-- END cc:que-se-valora -->
