@@ -1,0 +1,24 @@
+# Desarrollo: MongoDB y MailHog.
+#
+#   docker compose up -d
+#
+# MailHog recibe todo lo que manda la app (SMTP en el 1025) y lo muestra en
+# http://localhost:8025 sin entregarlo. Si ya tenés un MongoDB en el 27017,
+# levantá solo MailHog: docker compose up -d mailhog
+services:
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    ports:
+      - "${MAILHOG_SMTP_PORT:-1025}:1025"
+      - "${MAILHOG_UI_PORT:-8025}:8025"
+    restart: unless-stopped
+  mongo:
+    image: mongo:7
+    ports:
+      - "${MONGO_PORT:-27017}:27017"
+    volumes:
+      - mongo-data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo-data:

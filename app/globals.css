@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* Cartero: tinta azul de correo sobre papel frío. Un solo acento (el azul de
+   las acciones); el rojo del sello aparece solo en la marca y en los errores. */
+@theme inline {
+  --font-sans: var(--font-instrument);
+  --color-paper: #f3f5f7;
+  --color-ink: #14212b;
+  --color-muted: #5b6875;
+  --color-line: #dce2e8;
+  --color-correo: #1f3c88;
+  --color-correo-dark: #172e68;
+  --color-sello: #c2412d;
+}
+
+/* Títulos en Instrument Sans algo más angosta y pesada: la misma letra que el
+   texto, con más voz. */
+.display {
+  font-stretch: 87.5%;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* El sello de la marca: borde dentado como el de una estampilla. */
+.stamp {
+  padding: 0.2rem 0.55rem 0.25rem;
+  border: 2px dashed currentColor;
+  border-radius: 3px;
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+@layer base {
+  :where(a, button, input, textarea, select, summary):focus-visible {
+    outline: 2px solid var(--color-correo);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
