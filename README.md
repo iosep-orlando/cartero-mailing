@@ -11,7 +11,7 @@ El enunciado original está en [README-enunciado.md](README-enunciado.md).
 
 ## Demo
 
-**https://cartero-mailing.onrender.com** *(se completa al publicar; ver «Despliegue»)*
+**https://cartero-mailing.onrender.com**
 
 La versión publicada **no manda mails de verdad**: los guarda y los muestra
 en la [bandeja de demo](https://cartero-mailing.onrender.com/bandeja), que
@@ -20,7 +20,8 @@ cumple el papel de MailHog. Para probarla:
 1. Entrá con un email inventado, por ejemplo `tu-nombre@demo.test`.
 2. Abrí la bandeja de demo y usá el enlace del mail.
 3. Creá tu organización, cargá clientes, armá una plantilla y mandá una
-   campaña.
+   campaña. O entrá con `dueno@demo.test` para ver la organización de
+   ejemplo, «Librería Rayuela», ya cargada.
 4. Los mails de la campaña también aparecen en la bandeja, buscando por el
    email de cada cliente.
 
@@ -206,6 +207,10 @@ Atlas** (clúster gratuito). La configuración está en
    `MONGODB_URI='mongodb+srv://…' SEED_OWNER_EMAIL=dueno@demo.test npm run seed`.
 5. **Comprobar.** Entrá con un email `@demo.test`, sacá el enlace de
    `/bandeja` y mandá una campaña: sus mails aparecen en la bandeja.
+
+Comprobado en la versión publicada: ingreso con `dueno@demo.test` usando el
+enlace de la bandeja, y envío de «Novedades de diciembre», cuyos mails
+llegaron a la bandeja de cada cliente.
 
 Lo que implica el plan gratuito:
 
